@@ -494,6 +494,11 @@ class SyncplayClient(object):
         madeChangeOnPlayer = False
         if not paused:
             position += messageAge
+        if self._config['pauseUntilEveryoneLoaded'] and not paused and self.userlist.currentUser.canControl()\
+                and not self.userlist.areAllUsersInRoomLoaded() and not self.getGlobalPaused():
+            paused = True
+            if self._protocol:
+                self._protocol.sendState(self.getPlayerPosition(), True, False, None, True)
         if self._player:
             madeChangeOnPlayer = self._changePlayerStateAccordingToGlobalState(position, paused, doSeek, setBy)
         if madeChangeOnPlayer:
@@ -1065,25 +1070,31 @@ class SyncplayClient(object):
 
         unpauseAction = self._config['unpauseAction']
         if self.userlist.currentUser.isReady() or unpauseAction == constants.UNPAUSE_ALWAYS_MODE:
-            return True
+            result = True
         elif unpauseAction == constants.UNPAUSE_IFOTHERSREADY_MODE and self.userlist.areAllOtherUsersInRoomReady():
-            return True
+            result = True
         elif unpauseAction == constants.UNPAUSE_IFMINUSERSREADY_MODE and self.userlist.areAllOtherUsersInRoomReady()\
                 and self.autoPlayThreshold and self.userlist.usersInRoomCount() >= self.autoPlayThreshold:
-            return True
+            result = True
         else:
-            return False
+            result = False
+        if result and self._config['pauseUntilEveryoneLoaded'] and not self.userlist.areAllUsersInRoomLoaded():
+            result = False
+        return result
 
     def autoplayConditionsMet(self):
         if self.seamlessMusicOveride():
             self.setPaused(False)
         recentlyAdvanced = self._recentlyAdvanced()
-        return (
+        result = (
             self._playerPaused and (self.autoPlay or recentlyAdvanced) and
             self.userlist.currentUser.canControl() and self.userlist.isReadinessSupported()
             and self.userlist.areAllUsersInRoomReady(requireSameFilenames=self._config["autoplayRequireSameFilenames"])
             and ((self.autoPlayThreshold and self.userlist.usersInRoomCount() >= self.autoPlayThreshold) or recentlyAdvanced)
         )
+        if result and self._config['pauseUntilEveryoneLoaded'] and not self.userlist.areAllUsersInRoomLoaded():
+            result = False
+        return result
 
     def autoplayTimerIsRunning(self):
         return self.autoplayTimer.running
@@ -1591,6 +1602,14 @@ class SyncplayUserlist(object):
                         )
                 ):
                     return False
+        return True
+
+    def areAllUsersInRoomLoaded(self):
+        if self.currentUser.file is None:
+            return False
+        for user in self._users.values():
+            if user.room == self.currentUser.room and user.file is None:
+                return False
         return True
 
     def areAllOtherUsersInRoomReady(self):

@@ -7,6 +7,7 @@
 # 2) It is expected that you will have NSIS 3 NSIS from http://nsis.sourceforge.net installed.
 
 import codecs
+import shutil
 import sys
 # try:
 #     if (sys.version_info.major != 2) or (sys.version_info.minor < 7):
@@ -99,6 +100,8 @@ def get_nsis_path():
         return bin_name
 
 NSIS_COMPILE = get_nsis_path()
+if not os.path.isabs(NSIS_COMPILE):
+    NSIS_COMPILE = shutil.which(NSIS_COMPILE) or NSIS_COMPILE
 
 OUT_DIR = "syncplay_v{}".format(syncplay.version)
 SETUP_SCRIPT_PATH = "syncplay_setup.nsi"

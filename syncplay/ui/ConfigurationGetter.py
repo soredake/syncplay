@@ -62,6 +62,7 @@ class ConfigurationGetter(object):
             "autoplayInitialState": None,
             "autoplayMinUsers": -1,
             "autoplayRequireSameFilenames": True,
+            "pauseUntilEveryoneLoaded": False,
             "clearGUIData": False,
             "language": "",
             "checkForUpdatesAutomatically": None,
@@ -132,6 +133,7 @@ class ConfigurationGetter(object):
             "pauseOnLeave",
             "readyAtStart",
             "autoplayRequireSameFilenames",
+            "pauseUntilEveryoneLoaded",
             "clearGUIData",
             "rewindOnDesync",
             "slowOnDesync",
@@ -222,6 +224,7 @@ class ConfigurationGetter(object):
                 "sharedPlaylistEnabled", "loopAtEndOfPlaylist",
                 "loopSingleFiles",
                 "autoplayRequireSameFilenames",
+                "pauseUntilEveryoneLoaded",
                 "onlySwitchToTrustedDomains", "trustedDomains", "publicServers"],
             "gui": [
                 "autosaveJoinsToList",
