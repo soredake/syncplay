@@ -985,6 +985,7 @@ class ConfigDialog(QtWidgets.QDialog):
         self.readyPauseLayout.addWidget(self.pauseonleaveCheckbox)
         self.pauseUntilEveryoneLoadedCheckbox = QCheckBox(getMessage("pauseUntilEveryoneLoaded-label"))
         self.pauseUntilEveryoneLoadedCheckbox.setObjectName("pauseUntilEveryoneLoaded")
+        self.pauseUntilEveryoneLoadedCheckbox.setToolTip(getMessage("pauseuntileveryoneloaded-tooltip"))
         self.readyPauseLayout.addWidget(self.pauseUntilEveryoneLoadedCheckbox)
         self.readyLayout.addWidget(self.readyPauseGroup)
 
