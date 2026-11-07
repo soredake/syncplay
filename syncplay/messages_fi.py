@@ -238,6 +238,8 @@ fi = {
      "dontslowdownwithme-label": "Älä koskaan hidasta tai kelaile muita katsojia (kokeellinen)",
      "pausing-title": "Tauotetaan",
      "pauseonleave-label": "Tautota kun käyttäjä poistuu paikalta (esim. jos yhteytensä katkeaa)",
+         "pauseUntilEveryoneLoaded-label": "Tauota, kunnes kaikki ovat ladanneet videon",
+         "pauseuntileveryoneloaded-tooltip": "Tauota toisto, kunnes kaikki huoneen käyttäjät ovat ladanneet nykyisen videon",
      "readiness-title": "Alustava valmiustila",
      "readyatstart-label": "Aseta minut 'valmiina katselmaan' vakiollisesti",
      "forceguiprompt-label": "Älä näytä Syncplayn asetusikkunaa aina",  # (Inverted)

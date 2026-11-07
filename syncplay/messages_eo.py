@@ -240,6 +240,8 @@ eo = {
     "dontslowdownwithme-label": "Neniam malrapidigi nek reirigi aliulojn (eksperimenta)",
     "pausing-title": "Paŭzado",
     "pauseonleave-label": "Paŭzigi kiam uzanto foriras (ekz. se ĝi malkonektiĝis)",
+        "pauseUntilEveryoneLoaded-label": "Paŭzigi ĝis ĉiuj ŝargis la videon",
+        "pauseuntileveryoneloaded-tooltip": "Paŭzigi la ludon ĝis ĉiuj uzantoj en la ĉambro ŝargis la nunan videon",
     "readiness-title": "Komenca preteco",
     "readyatstart-label": "Marki min «preta spekti» dekomence",
     "forceguiprompt-label": "Ne montru ĉiam la agordan fenestron de Syncplay",  # (Inverted)

@@ -238,6 +238,8 @@ ko = {
     "dontslowdownwithme-label": "다른 사람의 속도를 늦추거나 되감지 않음 (실험적)",
     "pausing-title": "일시 중지하는 중",
     "pauseonleave-label": "사용자가 떠날 때 일시 중지 (예: 연결이 끊긴 경우)",
+        "pauseUntilEveryoneLoaded-label": "모두가 비디오를 로드할 때까지 일시 중지",
+        "pauseuntileveryoneloaded-tooltip": "방의 모든 사용자가 현재 비디오를 로드할 때까지 재생을 일시 중지",
     "readiness-title": "초기 준비 상태",
     "readyatstart-label": "기본적으로 '시청 준비됨'으로 설정",
     "forceguiprompt-label": "항상 Syncplay 구성 창을 표시하지 않음",  # (Inverted)
