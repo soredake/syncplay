@@ -237,8 +237,8 @@ es = {
     "dontslowdownwithme-label": "Nunca ralentizar ni rebobinar a otros (experimental)",
     "pausing-title": "Pausando",
     "pauseonleave-label": "Pausar cuando un usuario se va (p.ej. si se desconectan)",
-        "pauseuntileveryoneloaded-label": "Pausar hasta que todos hayan cargado el vídeo",
-        "pauseuntileveryoneloaded-tooltip": "Pausar la reproducción hasta que todos los usuarios de la sala hayan cargado el vídeo actual",
+    "pauseuntileveryoneloaded-label": "Pausar hasta que todos hayan cargado el vídeo",
+    "pauseuntileveryoneloaded-tooltip": "Pausar la reproducción hasta que todos los usuarios de la sala hayan cargado el vídeo actual",
     "readiness-title": "Estado de preparación inicial",
     "readyatstart-label": "Establecerme como \"listo-para-ver\" por defecto",
     "forceguiprompt-label": "No mostrar siempre la ventana de configuración de Syncplay",  # (Inverted)

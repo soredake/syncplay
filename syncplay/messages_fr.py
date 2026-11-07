@@ -238,8 +238,8 @@ fr = {
     "dontslowdownwithme-label": "Ne jamais ralentir ou rembobiner les autres (expérimental)",
     "pausing-title": "Pause",
     "pauseonleave-label": "Pause lorsque l'utilisateur quitte (par exemple s'il est déconnecté)",
-        "pauseuntileveryoneloaded-label": "Mettre en pause jusqu'à ce que tout le monde ait chargé la vidéo",
-        "pauseuntileveryoneloaded-tooltip": "Mettre la lecture en pause jusqu'à ce que tous les utilisateurs du salon aient chargé la vidéo en cours",
+    "pauseuntileveryoneloaded-label": "Mettre en pause jusqu'à ce que tout le monde ait chargé la vidéo",
+    "pauseuntileveryoneloaded-tooltip": "Mettre la lecture en pause jusqu'à ce que tous les utilisateurs du salon aient chargé la vidéo en cours",
     "readiness-title": "État de préparation initial",
     "readyatstart-label": "Définissez-moi comme «prêt à regarder» par défaut",
     "forceguiprompt-label": "Ne pas toujours afficher la fenêtre de configuration Syncplay",  # (Inverted)
