@@ -234,7 +234,7 @@ de = {
     "dontslowdownwithme-label": "Nie verlangsamen oder andere zurückspulen (Experimentell)",
     "pausing-title": "Pausiere",
     "pauseonleave-label": "Pausieren wenn ein Benutzer austritt",
-        "pauseUntilEveryoneLoaded-label": "Pausieren, bis alle das Video geladen haben",
+        "pauseuntileveryoneloaded-label": "Pausieren, bis alle das Video geladen haben",
         "pauseuntileveryoneloaded-tooltip": "Wiedergabe pausieren, bis alle Benutzer im Raum das aktuelle Video geladen haben",
     "readiness-title": "Anfänglicher Bereitschaftsstatus",
     "readyatstart-label": "Standardmäßig auf „Bereit“ stellen",

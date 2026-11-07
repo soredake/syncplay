@@ -238,7 +238,7 @@ zh_CN = {
     "dontslowdownwithme-label": "进度过慢时不用让其他人与我同步（试验功能）",
     "pausing-title": "暂停设置",
     "pauseonleave-label": "当其他人离开时暂停（例如其他人掉线）",
-        "pauseUntilEveryoneLoaded-label": "暂停直到所有人都加载视频",
+        "pauseuntileveryoneloaded-label": "暂停直到所有人都加载视频",
         "pauseuntileveryoneloaded-tooltip": "暂停播放，直到房间中的所有用户都加载了当前视频",
     "readiness-title": "初始准备状态",
     "readyatstart-label": "自动将我设置为\"已准备\"状态",

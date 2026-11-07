@@ -238,7 +238,7 @@ tr = {
     "dontslowdownwithme-label": "Başkalarını asla yavaşlatma veya geri sarma (deneysel)",
     "pausing-title": "Duraklatılıyor",
     "pauseonleave-label": "Kullanıcı ayrıldığında duraklayın (ör. Bağlantısı kesilirse)",
-        "pauseUntilEveryoneLoaded-label": "Herkes videoyu yükleyene kadar duraklatın",
+        "pauseuntileveryoneloaded-label": "Herkes videoyu yükleyene kadar duraklatın",
         "pauseuntileveryoneloaded-tooltip": "Odadaki tüm kullanıcılar mevcut videoyu yükleyene kadar oynatmayı duraklatın",
     "readiness-title": "İlk hazırlık durumu",
     "readyatstart-label": "Beni varsayılan olarak 'izlemeye hazır' olarak ayarla",

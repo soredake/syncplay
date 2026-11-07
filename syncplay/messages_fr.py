@@ -238,7 +238,7 @@ fr = {
     "dontslowdownwithme-label": "Ne jamais ralentir ou rembobiner les autres (expérimental)",
     "pausing-title": "Pause",
     "pauseonleave-label": "Pause lorsque l'utilisateur quitte (par exemple s'il est déconnecté)",
-        "pauseUntilEveryoneLoaded-label": "Mettre en pause jusqu'à ce que tout le monde ait chargé la vidéo",
+        "pauseuntileveryoneloaded-label": "Mettre en pause jusqu'à ce que tout le monde ait chargé la vidéo",
         "pauseuntileveryoneloaded-tooltip": "Mettre la lecture en pause jusqu'à ce que tous les utilisateurs du salon aient chargé la vidéo en cours",
     "readiness-title": "État de préparation initial",
     "readyatstart-label": "Définissez-moi comme «prêt à regarder» par défaut",

@@ -237,7 +237,7 @@ pt_BR = {
     "dontslowdownwithme-label": "Nunca desacelerar ou retroceder outros (experimental)",
     "pausing-title": "Pausando",
     "pauseonleave-label": "Pausar quando um usuário sair (por exemplo, se for desconectado)",
-        "pauseUntilEveryoneLoaded-label": "Pausar até que todos tenham carregado o vídeo",
+        "pauseuntileveryoneloaded-label": "Pausar até que todos tenham carregado o vídeo",
         "pauseuntileveryoneloaded-tooltip": "Pausar a reprodução até que todos os usuários da sala tenham carregado o vídeo atual",
     "readiness-title": "Estado de prontidão inicial",
     "readyatstart-label": "Marque-me como 'pronto para assistir' por padrão",

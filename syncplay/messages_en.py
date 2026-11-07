@@ -244,7 +244,7 @@ en = {
     "dontslowdownwithme-label": "Never slow down or rewind others (experimental)",
     "pausing-title": "Pausing",
     "pauseonleave-label": "Pause when user leaves (e.g. if they are disconnected)",
-    "pauseUntilEveryoneLoaded-label": "Pause until everyone has loaded the video",
+    "pauseuntileveryoneloaded-label": "Pause until everyone has loaded the video",
     "pauseuntileveryoneloaded-tooltip": "Pause playback until all users in the room have loaded the current video",
     "readiness-title": "Initial readiness state",
     "readyatstart-label": "Set me as 'ready to watch' by default",

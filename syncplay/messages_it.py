@@ -237,7 +237,7 @@ it = {
     "dontslowdownwithme-label": "Non rallentare o riavvolgere gli altri utenti (sperimentale)",
     "pausing-title": "Pausa",
     "pauseonleave-label": "Metti in pausa quando gli altri utenti lasciano la stanza (es. disconnessione)",
-        "pauseUntilEveryoneLoaded-label": "Metti in pausa finché tutti non hanno caricato il video",
+        "pauseuntileveryoneloaded-label": "Metti in pausa finché tutti non hanno caricato il video",
         "pauseuntileveryoneloaded-tooltip": "Metti in pausa la riproduzione finché tutti gli utenti della stanza non hanno caricato il video corrente",
     "readiness-title": "Stato iniziale di 'pronto'",
     "readyatstart-label": "Imposta sempre il mio stato come \"pronto\" a guardare",
