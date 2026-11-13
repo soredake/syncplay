@@ -440,6 +440,20 @@ end
 -- Apply user-set options
 options.read_options(opts)
 
+local working_prop = nil
+local original_layout_independent = false
+
+-- Проверяем, поддерживает ли текущая сборка mpv опцию из PR #18812
+local prop_names = {"options/input-layout-independent", "input-layout-independent"}
+for _, prop in ipairs(prop_names) do
+    local val = mp.get_property_native(prop)
+    if val ~= nil then
+        working_prop = prop
+        original_layout_independent = (val == true)
+        break
+    end
+end
+
 -- Escape a string for verbatim display on the OSD
 function ass_escape(str)
     -- There is no escape for '\' in ASS (I think?) but '\' is used verbatim if
@@ -563,15 +577,28 @@ function escape()
 end
 
 -- Set the REPL visibility (`, Esc)
+-- Set the REPL visibility (`, Esc)
 function set_active(active)
     if use_alpha_rows_for_chat == false then active = false end
     if active == repl_active then return end
     if active then
         repl_active = true
         insert_mode = false
+        
+        -- Временно отключаем независимость от раскладки, чтобы чат получал правильные символы системной раскладки
+        if working_prop ~= nil then
+            mp.set_property_bool(working_prop, false)
+        end
+        
         mp.enable_key_bindings('repl-input', 'allow-hide-cursor+allow-vo-dragging')
     else
         repl_active = false
+        
+        -- Возвращаем изначальное значение опции при закрытии чата
+        if working_prop ~= nil then
+            mp.set_property_bool(working_prop, original_layout_independent)
+        end
+        
         mp.disable_key_bindings('repl-input')
     end
     if default_oscvisibility_state ~= "never" and opts['OscVisibilityChangeCompatible'] == true then
